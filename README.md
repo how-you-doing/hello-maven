@@ -40,10 +40,10 @@ Maven is a build tool, mainly used to build and manage java projects.
     ```Tests run: 1, Failures: 0, Errors: 0, Skipped: 0```
 
 - ```mvn package```- takes all the compiled source and package them as a jar
-    - `JAR` can be found inside `~../../hello-maven/target/hello-maven-1.0-SNAPSHOT.jar`
+    - `JAR` can be found inside `target` directory, ex: `/home/${USER}/workspace/hello-maven/target/hello-maven-1.0-SNAPSHOT.jar`
 
 - ```mvn install```- copy the generate into `JAR` local repo, so that other projects can make use of this project
-    -  your `JAR` will be moved to `~../../.m2/repository/com/hod/hello-maven/1.0-SNAPSHOT/hello-maven-1.0-SNAPSHOT.jar`
+    -  your `JAR` will be moved to `/home/${USER}/.m2/repository/com/hod/hello-maven/1.0-SNAPSHOT/hello-maven-1.0-SNAPSHOT.jar`
 
 ## Note
 We can execute multiple phases or goals in a single line. For example,
