@@ -31,17 +31,21 @@ Maven is a build tool, mainly used to build and manage java projects.
 ## 4. Execution
 - ```mvn clean```- will clear all the artificates present in the project folder
     - clears `target` directory present in the project folder
+
 - ```mvn compile```- compiles all the source codes of the project
-    - For example, `.java` files present in the `main` and `test`   
+    - For example, `.java` files present in the `main` and `test`
+
 -  ```mvn test```- executes the test cases present in the project
     - As a result, you will get the status something like this
     ```Tests run: 1, Failures: 0, Errors: 0, Skipped: 0```
+
 - ```mvn package```- takes all the compiled source and package them as a jar
     - `JAR` can be found inside `~../../hello-maven/target/hello-maven-1.0-SNAPSHOT.jar`
+
 - ```mvn install```- copy the generate into `JAR` local repo, so that other projects can make use of this project
     -  your `JAR` will be moved to `~../../.m2/repository/com/hod/hello-maven/1.0-SNAPSHOT/hello-maven-1.0-SNAPSHOT.jar`
 
-##Note
+## Note
 We can execute multiple phases or goals in a single line. For example,
 ```
 mvn clean compile package
